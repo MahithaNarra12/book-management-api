@@ -1,0 +1,23 @@
+### Get all books
+GET http://localhost:4000/books
+
+### Add a new book
+POST http://localhost:4000/books
+Content-Type: application/json
+
+{
+  "title": "Dune",
+  "author": "Frank Herbert"
+}
+
+### Update a book by ID
+PUT http://localhost:4000/books/1
+Content-Type: application/json
+
+{
+  "title": "Updated Title",
+  "author": "New Author"
+}
+
+### Delete a book by ID
+DELETE http://localhost:4000/books/1
